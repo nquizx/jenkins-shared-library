@@ -1,6 +1,6 @@
-def call() {
+def call(String name, String branch) {
   sh(
     label: 'Echo from helloWorld.groovy',
-    script: 'echo "Hello World"'
+    script: 'echo "Hello ${name} World at ${branch}"'
   )
 }
